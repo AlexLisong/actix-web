@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Actix-Web Demo</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">Actix-Web Demo</div>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/about">About</a>
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Welcome to Actix-Web</h1>
+            <p class="hero-subtitle">A powerful, pragmatic, and extremely fast web framework for Rust</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="testApi()">Test API</button>
+                <a href="/about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Blazing Fast</h3>
+                    <p>Built on Tokio, Actix-Web delivers exceptional performance and low latency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Type Safe</h3>
+                    <p>Rust's type system ensures safety and prevents common web vulnerabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Async/Await</h3>
+                    <p>Modern asynchronous programming model for handling concurrent requests.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Flexible</h3>
+                    <p>Extensible architecture with middleware, extractors, and custom handlers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Interactive Demo</h2>
+            <div class="demo-card">
+                <h3>API Response</h3>
+                <p>Click the button above to make a request to our API endpoint.</p>
+                <div id="api-response" class="api-response">
+                    <pre id="response-content">No response yet. Click "Test API" to make a request.</pre>
+                </div>
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="visit-count">0</div>
+                    <div class="stat-label">Page Visits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="api-calls">0</div>
+                    <div class="stat-label">API Calls</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Rust Powered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with Actix-Web - A Rust Web Framework</p>
+            <p>Learn more at <a href="https://actix.rs" target="_blank">actix.rs</a></p>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
